@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Scada&display=swap');
+
+/*-----Font+Style ------- Calculation of the padding and border sizing-----*/
+*{
+    font-family: 'Scada', sans-serif;
+    box-sizing: border-box !important;
+}
+
+:root{
+    --bs-nav-link-font-size: 18px !important;
+    --nav-text-color: #000;
+    --nav-text-active : #0d6efd;
+    --nav-hover-link : #0d6efd;
+    --nav-hover-text-btn: #fff;
+    --galler-content-overlay: rgba(255, 255, 255, 0.65);
+    --bot-color : #437Ef7;
+}
+
+/*------------------------Preprocessor Directives----------------------------*/
+@media screen and (max-width: 992px) {
+    .m-query-auto{
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0 6px;
+        text-align: center;
+    }
+
+    .m-360-100{
+        width: 100%;
+        margin: 20px auto;
+
+    }
+
+    .fs-query-p{
+        font-size: 15px !important;
+    }
+}
+
+.btn-pot-color{
+    background-color: var(--bot-color);
+}
+
+
+/*Start --- Css --- Coding*/
+
+/*Start => Navbar customizing*/
+    /*Start => (.nav-link: color)*/
+    .navbar .container-fluid  .features .nav-link{
+        color: var(--nav-text-color);
+        transition: color 0.55s ease-in-out;
+    }
+    /*End => (.nav-link: color)*/
+
+    /*Start => (.nav-link .active: color)*/
+    .navbar .container-fluid  .features .active{
+        color: var(--nav-text-active);
+    }
+    /*End => (.nav-link .active: color)*/
+
+    /*Start => (.nav-link:hover)*/
+    .navbar .container-fluid  .features .nav-link:hover{
+        color: var(--nav-hover-link);
+    }
+
+    /*Start => nav-> Button*/
+    .navbar .container-fluid .features .info .btn-Log-in{
+        transition: all 0.55s ease-in-out;
+    }
+
+    .navbar .container-fluid .features .info .btn-Log-in:hover{
+        background-color: var(--nav-text-color);
+        color: var(--nav-hover-text-btn)
+    }
+
+    /*End => nav-> Button*/
+
+    /*End => (.nav-link:hover)*/
+/*End => Navbar customizing*/
+
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*Start => Under-Navbar customizing*/
+    /*Start => customizing Warpper*/
+    .Under-nav .warpper{
+        height: 70vh;
+        overflow: hidden;
+    }
+    /*End => customizing Warpper*/
+    
+    /*Start => customizing content insied under-nav*/
+    .Under-nav .container-fluid{
+        /* height: 50vh; */
+    }
+    /*End => customizing content insied-warpper*/
+
+    /*customizng the font-sizing*/
+    .Under-nav .h2-fs{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .Under-nav .p-fs{
+        font-size: 0.75rem;
+    }
+/*End => Under-Navbar customizing*/
+
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*Start => Sec1*/
+    /*Start => custoizing img:hover */
+    .sec1 .container .row div .combo{
+        transition: all 0.55s ease-in-out;
+    }
+    .sec1 .container .row div .combo:hover{
+        transform: scale(1.05);
+    }
+    /*End => custoizing img:hover */
+    
+    /*Start => Custimizing font size for h3 and p*/
+    .sec1 .container .row div .title .h-fs{
+        font-size: 0.75rem;
+        font-weight: 700;
+        margin-bottom: 0.25rem;
+    }
+    .sec1 .container .row div .title .p-fs{
+        font-size: 0.5rem;
+        padding: 0rem;
+        margin: 0rem;
+    }
+    /*End => Custimizing font size for h3 and p*/
+
+        /*Start => Custimizing font size for h3 and p inside-info-card*/
+    .sec1 .Gallery .container .row div .card-info .h-fs{
+        font-size: 0.5rem;
+        font-weight: 700;
+    }
+    .sec1 .Gallery .container .row div .card-info .p-fs{
+        font-size: 0.5rem;
+    }
+    .sec1 .Gallery .container .row div .card-info .cand-link{
+        text-decoration: none;
+        font-size: 0.5rem;
+    }
+    /*Start Castumiaing Gallary img + cards + cardinfo*/
+    /*End Castumiaing Gallary*/
+/*End => Sec1*/
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*Start => Sec2 */
+    /*Start => customizing-> Button: hober*/
+    .Sec2 .container-fluid .buttons .info .btn-Log-in{
+        transition: all 0.55s ease-in-out;
+    }
+
+    .Sec2 .container-fluid .buttons .info .btn-Log-in:hover{
+        background-color: var(--nav-text-color);
+        color: var(--nav-hover-text-btn)
+    }
+
+    /*End => nav-> Button*/
+/*End => Sec2 */
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+
+.sec6 .content-info .container .row div .my-logo{
+    filter: invert(1);
+    padding-bottom: 0.5rem;
+}
+
+.sec6 .p-fs{
+    font-size: 0.65rem;
+}
+
+.sec6 .content-info .container .row .submit-group input{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 0.22rem 0.5rem;
+}
+
+.sec6 .content-info .container .row .submit-group input::placeholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+}
+
+.sec6 .content-info .container .row .submit-group button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    font-size: 0.5rem;
+}
+
+.sec6 .content-info .container .row div ul li .footer-link{
+    text-decoration: none;
+    color: gainsboro;
+    font-size: 16px;
+    transition: all 0.55 ease-in-out;
+}
+
+.sec6 .content-info .container .row div ul li .footer-link:hover{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}

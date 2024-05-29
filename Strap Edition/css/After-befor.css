@@ -1,0 +1,22 @@
+.carousel-inner::before{
+    content: "";
+    border-left: 5px solid #000;
+    border-top: 4px solid #000 ;
+    position: absolute;
+    width: 10%;
+    height: 50%;
+    top: 0px;
+    left: 0px;
+}
+
+.carousel-inner::after{
+    content: "";
+    border-right: 5px solid #000;
+    border-bottom: 4px solid #000 ;
+    position: absolute;
+    width: 10%;
+    height: 50%;
+    bottom: 0px;
+    right: 0px;
+}
+
